@@ -1,6 +1,5 @@
 package edu.eci.arep.frameworkSpring;
 
-import edu.eci.arep.frameworkTest.Test;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -16,11 +15,11 @@ public class Spring {
                 try {
                     String uri  = m.getAnnotation(ResquestMapping.class).value();
                     System.out.println(uri);
-                    System.out.println(uri + ":" +  m);
-                    //services.put(uri, m);
-                    HttpServer.up(uri);
+                    System.out.println("Uri: "+ uri + " Method: " +  m);
+                    services.put(uri, m);
+                    HttpServer.up(services);
                 } catch (Throwable ex) {
-                    System.out.printf("Test %s failed: %s %n", m, ex.getCause());
+                    ex.printStackTrace();
                 }}}
         //System.out.printf("Passed: %d, Failed %d%n", passed, failed);
     }

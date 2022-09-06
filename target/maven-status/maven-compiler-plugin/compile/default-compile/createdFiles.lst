@@ -1,7 +1,7 @@
 edu\eci\arep\frameworkSpring\HelloController.class
+edu\eci\arep\frameworkTest\Test.class
+edu\eci\arep\frameworkSpring\HttpServer.class
 edu\eci\arep\frameworkTest\TestExample.class
 edu\eci\arep\frameworkTest\RunTests.class
 edu\eci\arep\frameworkSpring\ResquestMapping.class
 edu\eci\arep\frameworkSpring\Spring.class
-edu\eci\arep\frameworkTest\Test.class
-edu\eci\arep\frameworkSpring\HttpServer.class
