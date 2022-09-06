@@ -13,8 +13,8 @@ import java.util.logging.Level;
 public class HttpServer {
     public static void up(Map<String, Method> methods) throws IOException {
         ServerSocket serverSocket = null;
-        //Integer puerto = new Integer(System.getenv("PORT"));
-        Integer puerto =  35000;
+        Integer puerto = new Integer(System.getenv("PORT"));
+        //Integer puerto =  35000;
         try {
             serverSocket = new ServerSocket(puerto);
         } catch (IOException e) {
